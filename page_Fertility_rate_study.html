@@ -1,0 +1,179 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Fertility issue in Singapore, The Workshop</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Workshop</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">Home</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/xi-zhi-tan-88702b185/" class="icon brands fa-linkedin"><span class="label">Facebook</span></a></li>
+							<li><a href="https://github.com/MarcusTan30" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<h1>Isolating the factors underlying Singapore’s low fertility issue</h1>
+									<div class="image main"><img src="images\Baby.jpg" alt="" /></div>
+									
+									
+								</header>
+								<p>Since the 1960s, Singapore has been experiencing a declining fertility rate which fell below the replacement rate in the early 1970s. Despite the end of the stop at 2 policy in the 1980s, and multiple policies implemented to improve fertility rates since the early 2000s, fertility rate in Singapore continued to be on a downward trend. This research project aims to identify and study the relevant demographic factors lowering fertility trends in Singapore without presuming the truth of prior knowledge.</p>
+								<p>I aim to analyze the changes in fertility rates across a few demographic factors which I had theorized to be possible factors associated with changes in fertility rates (whether causal or not).
+									 <br>1.Education level
+									 <br>2.Age Group
+									 <br>3.Ethnicity
+									 <br>A few guiding questions that I would utilize to help better understand the presence of an association between these demographics are:
+									 <br>1.Are people of a specific demographic less willing/able to have children than they used to?
+									 <br>2.Are people of specific sub-demographic less willing/able to have children than other sub-demographics within the same demographic category (e.g., Education level, Age Group, Ethnicity).
+									 <br>3.Could lowering fertility rate be the result of widening/narrowing gaps in fertility rate between subcategories of a demographic dimension?
+									 <br>As the publicly available datasets are generally population level aggregate data, and not individual level data, designing an accurate regression model with low variance and bias would prove to be a challenge, regression models would hence not be used within this study.
+									</p>
+								<h2>Ethnicity and Fertility rates</h2>
+								<h3>Approach</h3>
+								<p>We will be using data on birth and fertility rates. This is a panel data showing the changes of fertility rates over time from 1960 to 2020 for the variables:
+										<li>Fertility rate per resident of specified age group</li>
+										<li>Fertility rate per resident of specified ethnicity</li>
+										<li>Aggregate fertility rate per resident</li> 
+								<br>This dataset will be used to study fertility rate changes between ethnicity and fertility rates and age cohort and fertility rate. We seek to study if the dip in fertility rate since the 1960s was caused by a factor which elicited differences in fertility rate changes amongst the different ethnic groups. If there had been widening gaps in fertility rate trends since the 1960s, i.e., ethnic groups facing differences in trends of fertility rate change, it could be evidence for the case that factors affecting fertility rates in Singapore is affecting different ethnic groups differently, resulting in different changes in fertility rates among different ethnic groups .	  
+								</p>
+								<iframe style="margin-left:-170px" height="800px" width="1520px" src="Files\Sg Fertility issue\Ethnicity  code.html" title="Ethnicity code" ></iframe>
+								<p>
+								<h3>Results</h3>
+									<p><b>Has there been deviations in differences in fertility rates between Singaporeans of different ethnicities since the 1960s?</b></p>
+								<figure class="image"><img src="images\FRI\FRI_Fig_2.png" width="550" height="400" alt="" />
+									<figcaption style='width: 550px; text-align: center;'>Fig.2</figcaption></figure>
+								</figure>
+								<br>
+								<p>From figure 2,we observe that since the 1960s, fertility rates has been decreasing for the 3 ethnic groups. With a sharp trend break in the mid-1970s.On the surface, the fertility trends for the 3 ethnic groups seemed to have been affected similarly over the country’s 60-year history.</p>
+								<br>
+								<figure class="image"><img src="images\FRI\FRI_Fig_3.png" width="550" height="400" alt="" />
+									<figcaption style='width: 550px; text-align: center;'>Fig.3</figcaption></figure>
+								</figure>
+								<figure class="image"><img src="images\FRI\FRI_Fig_4.png" width="600" height="400" alt="" />
+									<figcaption style='width: 570px; text-align: center;'>Fig.4</figcaption></figure>
+								<p>Figure 3 aims to highlight changes in differences of fertility rates amongst the 3 ethnic groups with each line showing the difference between 2 ethnic groups. Figure 3 however, was unable to make salient, any widening gaps between the different ethnicities since the 1960s. Figure 4 aims to solve that problem by charting the differences in fertility rate difference between ethnicities since the 1960s. This makes salient any growth in fertility rate gaps between ethnicities over time. While fertility rate differences between ethnicities are naturally  expected, it is possible that changing structural factors may have made childbearing less favorable /more difficult for any ethnicity, and this might result in a widening gap in fertility rate between ethnicities over time.</p>
+								<p>Figure 3 showed that fertility rate differences between ethnic groups before 1970 were as wide as 1 – 2 births per female, with a  break in this difference after the 1970s. From figure 4, we could see that since the early 1970s, fertility rate differences between ethnic groups had not changed much. In fact, fertility rate differences has remained relatively constant since then. This showed that at least since the 1970s, no ethnic group has experienced a growing fertility rate gap relative to other ethnic groups. This is evidence for the argument that ethnicity is not a demographic factor of interest when studying the cause of fertility rate changes over the last 40 years since the end of stop-at-2 policy.</p>
+								
+								<h2>Age Cohort and fertility rate</h2>
+								<h3>Approach</h3>
+								<p>This section aims to study how fertility rates has changed across different age groups over time.Data on age specific fertility rate was used, it provides a longitudinal view of the changes of fertility rates across different age groups.As the data was an aggregated data, and not an individual level panel data, regressions was deemed to result in biased and imprecise results, a simple data visualization was deemed the appropriate course of analysis to uncover peculiarities.</p>
+		                        <p>The fact that the data only shows mean fertility rates across age cohorts also meant that we can’t condense age groups together as we would require additional demographic data for such calculations (number of females for each age group at every time period).On top of a surface level view of the changes in fertility rates, we will also study the changes over time in fertility rate differences between a few age groups of interests, mainly the age cohorts 20-24 years and 25-29 years (Figure 6 & 7).</p>					
+								<iframe style="margin-left:-170px" height="800px" width="1520px" src="Files\Sg Fertility issue\Age code.html" title="Age code" ></iframe>
+								<h3>Results</h3>
+								<p><b>How has fertility rates across age cohorts changed?</b></p>
+								<br><figure class="image"><img src="images\FRI\FRI_Fig_5.png" width="600" height="800" alt="" />
+									<figcaption style='width: 570px; text-align: center;'>Fig.5</figcaption></figure>
+								<p>From figure 5, we could see that the fertility rates has been on a decreasing trend since the 1960s.However, we could also notice that while the linear trend of different age groups seems rather parallel before the mid 1980s (presumably before the end of stop at 2 policy),there seems to be deviations from this parallel trend after that point in time.</p>
+							    <figure class="image"><img src="images\FRI\FRI_Fig_6.png" width="700" height="400" alt="" />
+									<figcaption style='width: 570px; text-align: center;'>Fig.6</figcaption></figure>
+								<figure class="image"><img src="images\FRI\FRI_Fig_7.png" width="700" height="400" alt="" />
+									<figcaption style='width: 570px; text-align: center;'>Fig.7</figcaption></figure>
+								<p>Studying the changes in fertility rate of cohorts, we could see that the difference between most age groups and that of 20-24 years were in negative territory from 1960 to around the 1990s.This shows that women that bear children used to predominantly do so in their 20s.
+									However, since the 1960s, decisions to bear children has been increasingly delayed, as evident by the increasingly positive difference between the 30s and 40s cohort and that of the green and orange line (20s cohort). 
+									While we can conclude that fact, we have not been able to conclusively diagnose why women are delaying childbearing. Couples might possibly be either less willing (due to changing sociological beliefs on childbearing), or less able (either due to lacking costs or time).Further studies would need to be done to accurately diagnose the underlying cause.
+									</p>
+								<h2>Education level and Fertility rates</h2>
+									<h3>Approach</h3>
+									<p>This analysis will use a cross-sectional dataset of married females by age group, number of children borne, and highest qualification attained in the 2010 census. It allows us to study differences in fertility outcomes between females of differing education attainment and age cohort.</p>
+									<p>Due to a limited sample size on the  longitudinal data, a cross-sectional data was chosen as an alternative approach of analysis. A heatmap was generated with each cell showing the percentage of females of the specified highest attained education and age cohort. 3 heatmaps were made, each table indicating the number of children borne by females within the map (0,1 and >2 children).The percentage sum of the same cell (Age ,Education)
+										 across the 3 tables (0,1,>2 child) should equate to 100%.</p>
+									<p>As there were too many categories of Age groups (15 categories) and number of children born per woman (9 categories).The categories were further condensed in the following manner:
+										<li>Age groups were condensed into 10-year groups instead of 5-year groups, with age groups above and below child-bearing age (>50,<20) further condensed into one category each. </li>
+	                                    <li>Children borne categories were condensed into: No Child, 1 Child and 2 or more (bearing children at or above replacement level).</li>  								
+										<li>Cohort below the age of 20 was removed due to a small sample size (less than 200).</li></p>
+									<p>By studying the proportion of females within each education level and Age cohort, we are controlling for size differences between cohorts of age and education. This makes the cells within each Age group (horizontal cells) comparable to one another.</p>
+									<p>The limitation of utilizing a cross-section data however is that conclusions from observations in one age cohort are not necessarily externalizable to other age cohorts. Effects of belonging to an age cohort and generational cohort (being a certain age at a certain time) were not isolated in this analysis. We thus can’t use trends observed in older age cohorts as predictions of fertility behaviors of younger cohorts in the future.</p>
+										<iframe style="margin-left:-170px" height="800px" width="1520px" src="Files\Sg Fertility issue\Education code.html" title="Education code"></iframe>
+									
+									<h3>Results</h3>
+									<p><b>Does one’s education level affects fertility rate?</b></p>
+									<figure class="image"><img src="images\FRI\FRI_Fig_8.png" width="800" height="800" alt="" />
+										<figcaption style='width: 800px; text-align: center;'>Fig.8</figcaption></figure>
+										<p>Figure 8 showed a positive correlation (as shown by the increasing gradient of purple) between education attainment, and percentage of females of age cohort and highest attained education having no children in 2010 was observed for the age cohort 20 - 50 years. This points to a possible presence of correlation between education level and fertility rates.</p>
+									<figure class="image"><img src="images\FRI\FRI_Fig_9.png" width="800" height="800" alt="" />
+											<figcaption style='width: 800px; text-align: center;'>Fig.9</figcaption></figure>
+									<p>In figure 9, the 30–50-year cohort showed a positive correlation between a higher attained education and proportion of females of specified education attainment with 1 child in 2010.</p>
+									<figure class="image"><img src="images\FRI\FRI_Fig_10.png" width="800" height="800" alt="" />
+											<figcaption style='width: 800px; text-align: center;'>Fig.10</figcaption></figure>
+											<p>What we learnt from the figures shown above was that in 2010, within the cohort aged 30-50, there is a positive correlation between education level and the preference for one or no children and a negative correlation between education level and the preference for 2 or more children. </p>
+									<p></p>
+								<h2>Conclusions and result synthesis</h2>
+								<p>Through the analysis of the datasets, a few conclusions could be drawn:
+									<br><b>1.There seems to be little deviations in fertility rate gaps between different ethnicities after the 1970s.</b>
+									<br>Analysis of ethnic differences in fertility trends showed no deviations in trends over time, which indicates that while differences in fertility rates exists between ethnic groups (which there naturally will), no ethnic group is unequally affected by factors which lowered fertility trends. Hence fertility decrease is not due to the unequal response of any ethnicity to changing structural factors (e.g., economical or sociological) over time. 
+									<br>
+									<br><b>2.Women appear to be increasingly delaying childbearing decisions from their 20s to their 30s and 40s.</b>
+									<br>Depending on whether the cause of the delay is due to a lack of willingness or ability, this could have implications on how public policies could help increase fertility. As the ability of women to bear children lowers with age, there is a need to either promote the fertility health of couples or ensure that couples have access to alternative modes of conceiving children to preserve their ability to bear children at older age, such as in-vitro fertilization and the cryopreservation of eggs. A sociological study of the cause of any possible unwillingness to bear children earlier could also help us understand how (and if) we could better encourage families to bear children earlier.
+									<br>
+									<br><b>3.Education within the 30s-40s age cohort in 2010 seems to be positively correlated with bearing one or no children, and negatively correlated with bearing more than 2 children. </b>
+									<br>Given that women with a polytechnic diploma education and above makes up a significant and growing proportion of the Singapore population of over 30%, and university students makes up a majority of this group. An increasing demographic of highly educated women could mean a lowering willingness/ability to bear children.Conducting more conclusive studies into the causal mechanism behind this correlation is crucial in understanding how educated women and couples could be encouraged to have more children.
+								</p>
+								<h2>Useful links</h2>
+								<p>
+								Below are the links to materials used within this analysis:
+								<br>1.<a href="https://github.com/MarcusTan30/Understanding_Sg_Fertility_Rate">Repository link on github</a>
+								<br>2.<a href="https://tablebuilder.singstat.gov.sg/table/TS/M810091"> Singstat: Total Fertility Rate Dataset </a>
+								<br>3.<a href="https://tablebuilder.singstat.gov.sg/table/TS/M810091">Singstat: Total Fertility Rate amongst different Ethnicities</a>
+								<br>4.<a href="https://tablebuilder.singstat.gov.sg/table/TS/M810091">Singstat: Age Specific fertility rate</a>
+								<br>5.<a href="https://tablebuilder.singstat.gov.sg/table/CT/8521">Singstat: Fertility rate amongst women of different education level </a>
+								</p>
+								</section>
+
+							
+							<footer>
+								<div style="text-align:center" class="pagination" >
+									<!--<a href="#" class="previous">Prev</a>-->
+									<a href="index.html" class="page active" style="text-align:center">Back to home</a>
+								</div>
+							</footer>
+					</div>
+
+				<!-- Footer -->
+						<!-- Footer -->
+
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy;The Workshop</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

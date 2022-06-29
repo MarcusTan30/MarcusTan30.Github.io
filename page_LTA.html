@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Generic Page - Massively by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Workshop</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">Home</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/xi-zhi-tan-88702b185/" class="icon brands fa-linkedin"><span class="label">Facebook</span></a></li>
+							<li><a href="https://github.com/MarcusTan30" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<h1>Regional distribution of <br />
+									bus services</h1>
+									<div class="image main"><img src="images\Singapore_bus.png" alt="" /></div>
+									
+								</header>
+								<p>A friend of mine once required access to data regarding the transportation system in Singapore for an honors thesis study. Specifically, he was looking to utilize bus transportation prevalence as a proxy measure of transportation subsidy within different areas of Singapore. I utilized geo-dataframe points of bus stop locations and polygon geo-dataframes of different areas of Singapore to calculate the number of bus stops within each locations.</p>
+								
+								
+								<iframe style="margin-left:-50px" height="800px" width="1300px" src="Files\LTA_choropleth_stop_number.html" title="choropleth map"></iframe>
+								<p>I started by utilizing polygon data on the regional map of Singapore. From the looks of the first choropleth made it seems that the west and central region of Singapore has a significantly higher number of bus stops.</p>				
+								<iframe style="margin-left:-50px" height="800px" width="1300px" src="Files\LTA_choropleth.html" title="choropleth map"></iframe>	
+								<p>Upon studying this choropleth however, I came across another problem, that it is possible that bigger areas of Singapore naturally require more bus stops due to a greater need for transportation interconnectivity. A solution to this would be to study the bus density by areas of each region. This could be done by dividing the number of bus stops within each region by the squared area of the region.
+									 From the second choropleth, we could see that the central region of Singapore seems to have a significantly larger density of bus stops.</p>
+								<p>After examining the second choropleth, I realized that there were aspects which the choropleth had missed out thus far, which is that districts which contains a larger amount of “empty” forested land like that of the western region would have a lower density of infrastructure (e.g., housing, buildings) and hence would naturally require a lower density of bus stop. I hence decided to utilize a different set of polygon geo-data, which is the data 
+									of the 55 planning areas in Singapore. This polygon data would reduce the the ecological fallacy caused by unequally clustered points of bus stops within a given area. The planning area separates denser urban areas like Jurong West from the less urban areas like the central  and western water catchment area and Changi.</p>	 
+								<p>The next two choropleth shows both the stop numbers and bus stop density within the 55 planning areas of Singapore. From the bus stop density choropleth, it seems that bus stop density seems to  be higher within the Central Business District (CBD) and many major housing areas like Choa Chu Kang and Jurong.</p>
+								<iframe style="margin-left:-50px" height="800px" width="1300px" src="Files/LTA_choropleth_stop_number_planning_Area.html" title="choropleth map"></iframe>	
+								<iframe style="margin-left:-50px" height="800px" width="1300px" src="Files\LTA_Planning_Area_choropleth.html" title="choropleth map"></iframe>			
+								<b>Python code</b>
+								<iframe style="margin-left:-170px" height="800px" width="1520px" src="Files/LTA.html" title="choropleth map"></iframe>					
+							    <p>Link to analysis material:
+									<br>1. <a href="https://github.com/MarcusTan30/Singapore-land-transport-study-">Bus stop density repository</a>
+									<br>2. <a href="https://datamall.lta.gov.sg/content/dam/datamall/datasets/Geospatial/BusStopLocation.zip">Bus stop location shapefile download</a>
+									<br>3. <a href="https://data.gov.sg/dataset/70c818b4-2d1b-4400-90cb-21e0456eeb3f/download">Singapore planning area shapefile download</a>
+									<br>4. <a href="https://data.gov.sg/dataset/24f55cf4-0892-4ad1-8fcb-7d41791eb0e8/download">Singagpore regional shapefile download</a>
+								    <br>5. <a href="https://datamall.lta.gov.sg/content/datamall/en.html">LTA datamall site</a>
+								</p>
+							</section>
+							<footer>
+								<div style="text-align:center" class="pagination" >
+									<!--<a href="#" class="previous">Prev</a>-->
+									<a href="index.html" class="page active" style="text-align:center">Back to home</a>
+								</div>
+							</footer>
+					</div>
+
+				<!-- Footer -->
+						<!-- Footer -->
+
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
